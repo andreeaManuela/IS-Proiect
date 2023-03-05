@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="formm-boxx">
+
+  <form #forgotForm="ngForm" (ngSubmit)="ForgotPass(forgotForm)">
+    <label>Enter Username: </label>
+    <input type="text"  #username name="username" ngModel>
+    <label>Enter Email: </label>
+    <input type="text" #email name="email" ngModel >
+    <label>Enter New Password: </label>
+    <input type="text" #newPassword name="password" ngModel >
+    <button  type="submit"  class="btn">SUBMIT</button>
+    <button  class="buton1" type=button (click)="getRouteLocation('/login')"> BackToLogin</button>
+  </form>
+</div>

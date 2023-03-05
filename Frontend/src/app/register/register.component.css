@@ -1,0 +1,227 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-img
+{ width: 100%;
+  height:100%;
+  background-image: url(../../assets/icon2.png);
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size: contain;
+  position: absolute;
+  flex-wrap: wrap;
+}
+
+.head{
+  alignment: center;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.box
+{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 5px;
+  background: cadetblue;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+}
+.box::before
+{
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 600px;
+  height: 600px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg,transparent,cadetblue,cadetblue);
+  animation: animate 6s linear infinite;
+  flex-wrap: wrap;
+}
+.box::after
+{
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 600px;
+  height: 600px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg,transparent,white,white);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+  flex-wrap: wrap;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+.form
+{
+  position: absolute;
+  inset: 2px;
+  background: white ;
+  padding: 40px 40px;
+  border-radius: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+
+}
+.form h2
+{
+  text-align: center;
+  color: cadetblue;
+  font-family: Calibri;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.form h3
+{
+  text-align: left;
+  font-family: Calibri;
+  font-weight: 100;
+}
+
+.inputBoxName1
+{
+  position: relative;
+  margin: 40px;
+  margin-bottom: -20px;
+}
+
+.inputBoxName1 label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 42px;
+  color: cadetblue;
+
+}
+
+.inputBoxName2
+{
+  position: relative ;
+  margin: 40px;
+  margin-bottom: -20px;
+}
+
+.inputBoxName2 label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 44px;
+  color: cadetblue;
+}
+
+.inputBoxPhone
+{
+  position: relative ;
+  margin: 40px;
+  margin-bottom: -20px;
+}
+
+.inputBoxPhone label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 6px;
+  color: cadetblue;
+}
+
+.inputBoxMail
+{
+  position: relative;
+  margin: 40px;
+  margin-bottom: -20px;
+}
+
+.inputBoxMail label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 85px;
+  color: cadetblue;
+
+}
+
+.inputBoxUsername
+{
+  position: relative ;
+  margin: 40px;
+  margin-bottom: -20px;
+}
+
+.inputBoxUsername label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 46px;
+  color: cadetblue;
+}
+
+.inputBoxPass
+{
+  position: relative;
+  margin: 40px;
+}
+
+.inputBoxPass label{
+  font-family: Calibri;
+  font-size: 20px;
+  margin-right: 52px;
+  color: cadetblue;
+}
+
+button
+{
+  background-color:  cadetblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  flex-wrap: wrap;
+
+}
+button:hover {
+  background-color: cadetblue;
+}
+.buttonBack {
+  background-color: #de4c68; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

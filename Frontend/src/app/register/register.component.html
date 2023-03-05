@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="register.component.css">
+</head>
+<body>
+<div class="bg-img">
+  <div class="box">
+    <div class="form">
+      <h2>REGISTER</h2>
+      <h3>Welcome to FashionStore!</h3>
+      <h3>We are glad that you want to become a member!</h3>
+      <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+        <div class="form-group">
+          <div class="inputBoxName1">
+            <label>First Name:</label>
+            <input type="text"  name="firstname"  ngModel  required #firstname="ngModel" >
+            <i></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inputBoxName2">
+            <label>Last Name:</label>
+            <input type="text" name="lastname" ngModel  required #lastname="ngModel" >
+            <i></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inputBoxPhone">
+            <label>Phone Number:</label>
+            <input type="text" name="phone" ngModel required #phone="ngModel">
+            <i></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inputBoxMail">
+            <label>Email:</label>
+            <input type="text"  name="email" ngModel  required #email="ngModel" >
+            <i></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inputBoxUsername">
+            <label>Username:</label>
+            <input type="text" name="username" ngModel #username="ngModel">
+            <i></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inputBoxPass">
+            <label>Password:</label>
+            <input type="password"  name="password" ngModel  required #email="ngModel">
+            <i></i>
+          </div>
+        </div>
+
+        <button type="submit" clasa="buton">Confirm</button>
+        <button class="buttonBack" type="back" clasa="buton">Back</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

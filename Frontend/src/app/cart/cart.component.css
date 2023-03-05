@@ -1,0 +1,118 @@
+.card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+  background-color: #f3f2f2;
+
+}
+
+.container
+{
+
+  background-color: #f3f2f2;
+
+}
+.center img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px;
+}
+
+h4,
+h6 {
+  font-weight: 400;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #d7ca92
+}
+tr:nth-child(odd){background-color: #d7ca92
+}
+
+th {
+  background-color: #d7ca92;
+  color: #100d0d;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 20%;
+  min-width: unset;
+  word-wrap: break-word;
+  background-color: #f3f2f2;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+
+}
+
+.center .btn {
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: cadetblue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+
+.button:hover{
+  background-color: lightblue;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}

@@ -1,0 +1,85 @@
+.spacer{
+  flex:2 2  auto;
+}
+.mat-button-toggle{
+  background-color:#832256;
+  color: #ffffff;
+}
+
+.mat-button:hover {
+  background-color:#832256;
+  color: navajowhite;
+}
+
+.mat-button-toggle-checked {
+  background-color: #ec2c4c;
+  color: #67ec79 ;
+}
+.mat-toolbar.mat-primary {
+  background: cadetblue;
+  color: #fff;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.loader-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.8;
+  z-index: 99;
+}
+
+.matt-button-toggle
+{
+  width: 50%;
+  height:50%;
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size: contain;
+  position: absolute;
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  float: left;
+}
+input[type=text] {
+  position: static;
+  padding: 6px 20px;
+  margin-top: 8px;
+  margin-right: -690px;
+  margin-left: 30px;
+  font-size: 17px;
+  border: none;
+}
+.searchbox button {
+  position: static;
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-left: 700px;
+  margin-right: 500px;
+  background: whitesmoke;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.searchbox button:hover {
+  background: yellow;
+}

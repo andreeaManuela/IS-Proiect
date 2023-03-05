@@ -1,0 +1,43 @@
+
+
+<html xmlns="http://www.w3.org/1999/html">
+<body>
+<mat-toolbar color="primary">
+  <span>All4One</span>
+</mat-toolbar>
+
+<link rel="stylesheet" href="login.component.css">
+<div class="box">
+  <span style="--i:1"><img src="assets/1.JPG"></span>
+  <span style="--i:2"><img src="assets/2.JPG"></span>
+  <span style="--i:3"><img src="assets/3.JPG"></span>
+  <span style="--i:4"><img src="assets/4.JPG"></span>
+  <span style="--i:5"><img src="assets/6.JPG"></span>
+  <span style="--i:6"><img src="assets/1.JPG"></span>
+  <span style="--i:7"><img src="assets/2.JPG"></span>
+  <span style="--i:8"><img src="assets/3.JPG"></span>
+</div>
+<link rel="stylesheet" href="login.component.css">
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm)">
+  <div class="formm-boxx">
+    <label>WELCOME PLEASE LOGIN </label><br>
+    <label>Enter Username: </label>
+    <!-- parola va fi stocata intr-un parametru cu numele username care nu este o valoare -->
+
+
+    <input type="text"  #username name="username" ngModel>
+    <label>Enter Password: </label>
+    <!-- parola va fi stocata intr-un parametru cu numele password care nu este o valoare -->
+
+    <input type="password" #password name="password" ngModel >
+    <!-- ca sa luam valoarea trebuie apelat value pe variabila-->
+    <!-- valorile parametrului sunt trimise la functia userLogin care este impl in login.component.ts -->
+    <button  type="submit"  (click)="userLogin(loginForm)" class="btn">Login</button>
+    <button class="buton1" type=button (click)="getRouteLocation('/register')"> REGISTER</button>
+
+
+  </div>
+</form>
+
+</body>
+

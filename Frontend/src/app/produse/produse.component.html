@@ -1,0 +1,163 @@
+<app-navbar></app-navbar>
+
+<!-- ROCHII-->
+<div class="containerNume" width="50" height="50">
+  <h1>DRESSES</h1>
+</div>
+<div class="grid">
+
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Dresses'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button" type=button (click)="addtocart(item)" style="vertical-align:middle"> <span>Add to cart </span> </button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+
+</div>
+
+
+
+
+<!-- TRICOURI-->
+
+<div class="containerNume">
+  <h1>TOPS</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Tops'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button" type=button (click)="addtocart(item)"  style="vertical-align:middle"><span>Add to cart </span></button>      </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!-- JEANS-->
+<div class="containerNume">
+  <h1>JEANS</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Jeans'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button" type=button (click)="addtocart(item)" style="vertical-align:middle"><span>Add to cart </span></button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+
+
+<!-- GECI-->
+<div class="containerNume">
+  <h1>JACKETS</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Jackets'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button" type=button (click)="addtocart(item)" style="vertical-align:middle"><span>Add to cart </span></button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+
+
+<!-- HANORACE-->
+<div class="containerNume">
+  <h1>HOODIES</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Hoodies'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button" type=button (click)="addtocart(item)" style="vertical-align:middle"><span>Add to cart </span></button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!-- COSTUME DE BAIE-->
+<div class="containerNume">
+  <h1>SWIMWEAR</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Swimwear'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <button class="button"  type=button (click)="addtocart(item)" style="vertical-align:middle"><span>Add to cart </span></button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!-- PIJAMALE-->
+<div class="containerNume">
+  <h1>PAJAMAS</h1>
+
+</div>
+<div class="grid">
+  <ng-container *ngFor="let item of productList">
+    <ng-container *ngIf="item.quantity!=0">
+      <div *ngIf="item.category=='Pajamas'">
+        <div class="grid-item">
+          <img src="{{item.image}}}" alt="" width="150" height="150">
+          <h4><strong>{{item.name}}</strong></h4>
+          <p><em>{{item.description}}</em></p>
+          <p><strong>Price:   </strong>{{item.price}} $</p>
+          <!--Cand se apasa butonul de add se apeleaza functia addTocart =>addTocart Products=>addToCart=>service-->
+          <button class="button"  type=button (click)="addtocart(item) " style="vertical-align:middle"><span>Add to cart </span></button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+
+
+</div>
+
+
+
+
